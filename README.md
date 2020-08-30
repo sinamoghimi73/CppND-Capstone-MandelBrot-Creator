@@ -1,18 +1,24 @@
 # CPPND: Capstone Mandelbrot Creator
 <img src="data/Mandelbrot_Creator.png"/>
 
-This project consists of developing code to draw and explore a certain kind of fractal called a Mandelbrot set.
-
 ## Mandelbrot Set
 Benoit Mandelbrot was a Polish born, French/American mathematician who spent most of his career at the IBM research center in New York. He is credited for coining the term “fractal” and developed a theory of `roughness`/`self- similarity`/`fractals`/`chaos`. His book [The Fractal Geometry of Nature](https://www.amazon.com/Fractal-Geometry-Nature-Benoit-Mandelbrot/dp/0716711869) was published in 1982 and was quite influential at the time (this was when computer graphics were just becoming widely available). One of his inventions/discoveries, the Mandelbrot set has stimulated significant mathematical research and is popularly used to generate interesting visual images (and also test the limits of hardware!). 
 
-To understand the `Mandelbrot set` and another famous set called `Julia Set`, you can visit [1](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Avalos-Bock.pdf) and [2](http://sites.science.oregonstate.edu/~koslickd/Mandelbrot.pdf).
+To understand the `Mandelbrot set` and another famous set called `Julia Set`, you can visit [here](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Avalos-Bock.pdf) and [here](http://sites.science.oregonstate.edu/~koslickd/Mandelbrot.pdf).
 
+## About the project
+This project consists of developing code to draw and explore a certain kind of fractal called a Mandelbrot set. The flow of this project is as follows:
 
+1. Create a 2D vector using `std::vector`, since it is guaranteed to be contiguous and call it `_vec` with size (width*height, std::vector<int> (3, 0)). (One time only!)
+2. Create a 2D matrix for the image using `cv::Mat`, to visualize the fractal and call it `_image`. (One time only!)
+3. Create a method to calculate the number of iterations for each point in the `_vec` and call it `_iterations`.
+4. Create a BGR color creator using `cv::Vec3b`, get the number of _iterations from step 3 and convert it to 3-channel color pixel.
+5. Iterate through all indexes of `_vec` and set elements like (i, x, 0) considering the fact that C++ is `Row-major order`. (One time only!) 
+6. Create `n` vectors with size : `_vec.size()/n` and fill them with addresses of `_vec` from beginning to end, in order (One time only!). 
+7. Pass vectors created in step 6 to other threads using `std::async` and `std::future<void>` to calculate `_iterations` and fill their corresponding index like (i, x, _iterations). (Multiple times during `show image`, `zoom-in` and `zoom-out`).
+8. Iterate through all indexes/pixels of `_image`, and set their color using their corresponding `BGR` pixel calculated in step 4.
+9. `cv::imshow` the `_image` each time the `zoom-in` or `zoom-out` functions are called.
 
-
-
-<!-- In this project we are going to draw Mandelbrot fractal using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame.  -->
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
