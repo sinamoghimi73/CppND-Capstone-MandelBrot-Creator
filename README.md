@@ -7,7 +7,10 @@ This project consists of developing code to draw and explore a certain kind of f
 Benoit Mandelbrot was a Polish born, French/American mathematician who spent most of his career at the IBM research center in New York. He is credited for coining the term “fractal” and developed a theory of `roughness`/`self- similarity`/`fractals`/`chaos`. His book [The Fractal Geometry of Nature](https://www.amazon.com/Fractal-Geometry-Nature-Benoit-Mandelbrot/dp/0716711869) was published in 1982 and was quite influential at the time (this was when computer graphics were just becoming widely available). One of his inventions/discoveries, the Mandelbrot set has stimulated significant mathematical research and is popularly used to generate interesting visual images (and also test the limits of hardware!). 
 
 To understand the Mandelbrot set, let’s first consider what happens when we take a region in the complex plane, and then repeatedly square each point
+
 <img src="https://render.githubusercontent.com/render/math?math=z_{k+1} = z_{k}^{2},\hspace{1cm}    k = 0,1,...">
+
+For which initial values <img src="https://render.githubusercontent.com/render/math?math=z_{0}"> does the sequence <img src="https://render.githubusercontent.com/render/math?math={z_{k}}_z_{k} \ge 0">
 
 <!-- In this project we are going to draw Mandelbrot fractal using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame.  -->
 
