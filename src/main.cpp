@@ -13,13 +13,8 @@ int main() {
 
   Mandelbrot sina(center_x, center_y, width, height);
 
-  ///////////////////////////////////////////////////////
-
-  ///////////////////////////////////////////////////////
-
   sina.showImage();
 
-  // std::cout << sina.getImageHandle() << std::endl;
 
   return 0;
 }

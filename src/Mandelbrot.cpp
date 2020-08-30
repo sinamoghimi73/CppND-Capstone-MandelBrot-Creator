@@ -13,7 +13,7 @@ Mandelbrot::Mandelbrot(double cx, double cy, int width, int height)
       _offsetX{2.125},
       _offsetY{1.5},
       _scaleFactor{1},
-      _maxIter{30},
+      _maxIter{40},
       _divergenceLimit{2},
       _nCores{std::thread::hardware_concurrency()},
       _vec{std::make_shared<std::vector<std::vector<int>>>(
