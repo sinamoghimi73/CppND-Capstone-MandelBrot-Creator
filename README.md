@@ -55,6 +55,7 @@ or simply:
 
 * `make format` to use the settings of the `style` which in this project is set by default to `-style=google`.
 * `make all` to perform almost all the steps above at once.
+* Run it: `./build/Capstone`.
 
 ## Operations
 In order to zoom-in or zoom-out the image, you will need to put the mouse pointer on the place you like in the frame.
