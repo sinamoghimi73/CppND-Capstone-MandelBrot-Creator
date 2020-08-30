@@ -10,8 +10,15 @@ To understand the Mandelbrot set, let’s first consider what happens when we ta
 
 <img src="https://render.githubusercontent.com/render/math?math=z_{k+1} = z_{k}^{2},\hspace{1cm}    k = 0,1,...">
 
-For which initial values <img src="https://render.githubusercontent.com/render/math?math=z_{0}"> does the sequence <img src="https://render.githubusercontent.com/render/math?math=z_{k} \forall k \ge 0"> remain bounded as <img src="https://render.githubusercontent.com/render/math?math=k \to inf">? After a little thought, one can see that this set is simply the unit disc, 
-<img src="https://render.githubusercontent.com/render/math?math=\lvert z_{0} rvert \le 1">. If <img src="https://render.githubusercontent.com/render/math?math=\lvert z_{0} rvert \ge 1">, then the sequence is unbounded.
+For which initial values <img src="https://render.githubusercontent.com/render/math?math=z_{0}"> does the sequence <img src="https://render.githubusercontent.com/render/math?math=z_{k} \forall k \ge 0"> remain bounded as <img src="https://render.githubusercontent.com/render/math?math=k \to \inf">? After a little thought, one can see that this set is simply the unit disc, 
+<img src="https://render.githubusercontent.com/render/math?math=\lvert z_{0} \rvert \le 1">. If <img src="https://render.githubusercontent.com/render/math?math=\lvert z_{0} \rvert \ge 1">, then the sequence is unbounded.
+
+The definition of the Mandelbrot set is only slightly more complicated: The Mandelbrot set is the region in the complex plane consisting of those values <img src="https://render.githubusercontent.com/render/math?math=z_{0}"> such that the sequence <img src="https://render.githubusercontent.com/render/math?math=z_{k} \forall k \ge 0"> remains bounded for 
+
+<img src="https://render.githubusercontent.com/render/math?math=z_{k+1} = z_{k}^{2} + z_{0},\hspace{1cm}    k = 0,1,...">
+
+Even with such a simple definition like this, a fantastic amount of complexity can be generated.
+
 <!-- In this project we are going to draw Mandelbrot fractal using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame.  -->
 
 ## Dependencies for Running Locally
