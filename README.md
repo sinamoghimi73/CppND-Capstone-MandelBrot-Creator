@@ -9,7 +9,7 @@ To understand the `Mandelbrot set` and another famous set called `Julia Set`, yo
 ## About the project
 This project consists of developing code to draw and explore a certain kind of fractal called a Mandelbrot set. The flow of this project is as follows:
 
-1. Create a 2D vector using `std::vector`, since it is guaranteed to be contiguous and call it `_vec` with size (width*height, std::vector<int> (3, 0)). (One time only!)
+1. Create a 2D vector using `std::vector`, since it is guaranteed to be contiguous and call it `_vec` with size `(width*height, std::vector<int> (3, 0))`. (One time only!)
 2. Create a 2D matrix for the image using `cv::Mat`, to visualize the fractal and call it `_image`. (One time only!)
 3. Create a method to calculate the number of iterations for each point in the `_vec` and call it `_iterations`.
 4. Create a BGR color creator using `cv::Vec3b`, get the number of _iterations from step 3 and convert it to 3-channel color pixel.
