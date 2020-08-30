@@ -24,7 +24,7 @@ In this project we are going to draw Mandelbrot images using the object oriented
 3. Compile: `cmake .. && make`
 4. Run it: `./Capstone`.
 
-- or
+or simply
 
 0. You can only use below commands:
 * `make debug` for Debug.
