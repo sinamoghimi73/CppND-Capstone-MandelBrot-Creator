@@ -6,18 +6,11 @@ This project consists of developing code to draw and explore a certain kind of f
 ## Mandelbrot Set
 Benoit Mandelbrot was a Polish born, French/American mathematician who spent most of his career at the IBM research center in New York. He is credited for coining the term “fractal” and developed a theory of `roughness`/`self- similarity`/`fractals`/`chaos`. His book [The Fractal Geometry of Nature](https://www.amazon.com/Fractal-Geometry-Nature-Benoit-Mandelbrot/dp/0716711869) was published in 1982 and was quite influential at the time (this was when computer graphics were just becoming widely available). One of his inventions/discoveries, the Mandelbrot set has stimulated significant mathematical research and is popularly used to generate interesting visual images (and also test the limits of hardware!). 
 
-To understand the Mandelbrot set, let’s first consider what happens when we take a region in the complex plane, and then repeatedly square each point
+To understand the `Mandelbrot set` and another famous set called `Julia Set`, you can visit [1](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Avalos-Bock.pdf) and [2](http://sites.science.oregonstate.edu/~koslickd/Mandelbrot.pdf).
 
-<img src="https://render.githubusercontent.com/render/math?math=z_{k+1} = z_{k}^{2},\hspace{1cm}    k = 0,1,...">
 
-For which initial values <img src="https://render.githubusercontent.com/render/math?math=z_{0}"> does the sequence <img src="https://render.githubusercontent.com/render/math?math=z_{k} \forall k \ge 0"> remain bounded as <img src="https://render.githubusercontent.com/render/math?math=k \to \inf">? After a little thought, one can see that this set is simply the unit disc, 
-<img src="https://render.githubusercontent.com/render/math?math=\lvert z_{0} \rvert \le 1">. If <img src="https://render.githubusercontent.com/render/math?math=\lvert z_{0} \rvert \ge 1">, then the sequence is unbounded.
 
-The definition of the Mandelbrot set is only slightly more complicated: The Mandelbrot set is the region in the complex plane consisting of those values <img src="https://render.githubusercontent.com/render/math?math=z_{0}"> such that the sequence <img src="https://render.githubusercontent.com/render/math?math=z_{k} \forall k \ge 0"> remains bounded for 
 
-<img src="https://render.githubusercontent.com/render/math?math=z_{k+1} = z_{k}^{2} + z_{0},\hspace{1cm}    k = 0,1,...">
-
-Even with such a simple definition like this, a fantastic amount of complexity can be generated.
 
 <!-- In this project we are going to draw Mandelbrot fractal using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame.  -->
 
