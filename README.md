@@ -6,7 +6,7 @@ Benoit Mandelbrot was a Polish born, French/American mathematician who spent mos
 
 To understand the `Mandelbrot set` and another famous set called `Julia Set`, you can visit [here](http://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Avalos-Bock.pdf) and [here](http://sites.science.oregonstate.edu/~koslickd/Mandelbrot.pdf).
 
-## About the project
+## About this project
 This project consists of developing code to draw and explore a certain kind of fractal called a Mandelbrot set. The flow of this project is as follows:
 
 1. Create a 2D vector using `std::vector`, since it is guaranteed to be contiguous and call it `_vec` with size `(width*height, std::vector<int> (3, 0))`. (One time only!)
