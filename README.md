@@ -15,7 +15,7 @@ This project consists of developing code to draw and explore a certain kind of f
 4. Create a `BGR` color creator using `cv::Vec3b`, get the number calculated in iterPixel and convert it to a 3-channel color pixel.
 5. Iterate through all indexes of `_vec` and set elements like (i, x, 0) considering the fact that C++ is `Row-major order`. (One time only!) 
 6. Create `n` vectors with size : `_vec.size()/n` and fill them with addresses of `_vec` from beginning to end, in order.! (One time only!)
-7. Pass vectors created in step 6 to other threads using `std::async` and `std::future<void>` to perform `iterPixel` and fill their corresponding index like (i, x, iterPixel). (Multiple times during `show image`, `zoom-in` and `zoom-out`).
+7. Pass vectors created in step 6 to other threads using `std::async` and `std::future<void>` to perform `iterPixel` and fill their corresponding index like (i, x, returned value of iterPixel). (Multiple times during `show image`, `zoom-in` and `zoom-out`).
 8. Iterate through all indexes/pixels of `_image`, and set their color using their corresponding `BGR` pixel.
 9. `cv::imshow` the `_image` each time the `zoom-in` or `zoom-out` functions are called.
 * Please note that in order to be able to pass vectors multiple times or fill `_image` multiple times, they are created as `Shared pointers`, therefore, each time they only get `updated` or `modified`.
