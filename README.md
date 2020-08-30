@@ -58,7 +58,7 @@ or simply:
 * Run it: `./build/Capstone`.
 
 ## Operations
-In order to zoom-in or zoom-out the image, you will need to put the mouse pointer on the place you like in the frame.
+In order to zoom-in or zoom-out the image, you will need to put the mouse cursor on the place you like in the frame.
 1. Press button `i` to zoom-in.
 2. Press button `o` to zoom-out.
 3. Press button `q` to quit.
