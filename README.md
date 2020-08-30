@@ -11,13 +11,14 @@ This project consists of developing code to draw and explore a certain kind of f
 
 1. Create a 2D vector using `std::vector`, since it is guaranteed to be contiguous and call it `_vec` with size `(width*height, std::vector<int> (3, 0))`. (One time only!)
 2. Create a 2D matrix for the image using `cv::Mat`, to visualize the fractal and call it `_image`. (One time only!)
-3. Create a method to calculate the number of iterations for each point in the `_vec` and call it `_iterations`.
-4. Create a BGR color creator using `cv::Vec3b`, get the number of _iterations from step 3 and convert it to 3-channel color pixel.
+3. Create a method to calculate the number of iterations for each point in the `_vec` and call it `iterPixel`.
+4. Create a `BGR` color creator using `cv::Vec3b`, get the number calculated in iterPixel and convert it to a 3-channel color pixel.
 5. Iterate through all indexes of `_vec` and set elements like (i, x, 0) considering the fact that C++ is `Row-major order`. (One time only!) 
-6. Create `n` vectors with size : `_vec.size()/n` and fill them with addresses of `_vec` from beginning to end, in order (One time only!). 
-7. Pass vectors created in step 6 to other threads using `std::async` and `std::future<void>` to calculate `_iterations` and fill their corresponding index like (i, x, _iterations). (Multiple times during `show image`, `zoom-in` and `zoom-out`).
-8. Iterate through all indexes/pixels of `_image`, and set their color using their corresponding `BGR` pixel calculated in step 4.
+6. Create `n` vectors with size : `_vec.size()/n` and fill them with addresses of `_vec` from beginning to end, in order.! (One time only!)
+7. Pass vectors created in step 6 to other threads using `std::async` and `std::future<void>` to perform `iterPixel` and fill their corresponding index like (i, x, iterPixel). (Multiple times during `show image`, `zoom-in` and `zoom-out`).
+8. Iterate through all indexes/pixels of `_image`, and set their color using their corresponding `BGR` pixel.
 9. `cv::imshow` the `_image` each time the `zoom-in` or `zoom-out` functions are called.
+* Please note that in order to be able to pass vectors multiple times or fill `_image` multiple times, they are created as `Shared pointers`, therefore, each time they only get `updated` or `modified`.
 
 
 ## Dependencies for Running Locally
