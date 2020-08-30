@@ -1,7 +1,7 @@
 # CPPND: Capstone Mandelbrot Creator
 <img src="data/Mandelbrot_Creator.png"/>
 
-In this project we are going to draw Mandelbrot images using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame. 
+In this project we are going to draw Mandelbrot fractal using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame. 
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
