@@ -50,7 +50,7 @@ or simply:
 * `make clean` to remove the build directory.
 * `make style` to specify the format you want your code be like.
   * You will need to install `clang-format` first in case it is not installed. You only need to use it once.
-  * In macOS you to have `Homebrew` installed. The instructions on how to install, can be found [here](https://brew.sh). Then you can `brew install clang-format`.
+  * In macOS you have to have `Homebrew` installed. The instructions on how to install, can be found [here](https://brew.sh). Then you can `brew install clang-format`.
   * In Ubuntu or Debian you can `sudo apt install clang-format`.
 
 * `make format` to use the settings of the `style` which in this project is set by default to `-style=google`.
