@@ -47,13 +47,13 @@ private:
   double _x1{}, _y1{}, _x2{}, _y2{}, _linspaceX{}, _linspaceY{};
   const int _width{}, _height{};
 
-/// instances for the color conversion.
+  /// instances for the color conversion.
   short _tempPix;
   cv::Vec3b _pixelColorBGR;
   cv::Vec3f _pixelColorHSV;
   cv::Vec3b *_pixelPtr;
 
-/// instances for getting the mouse cursor coordinates.
+  /// instances for getting the mouse cursor coordinates.
   cv::Point _pix;
 
   /// instances for the calculation.
