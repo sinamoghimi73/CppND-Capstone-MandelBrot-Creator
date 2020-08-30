@@ -1,7 +1,13 @@
 # CPPND: Capstone Mandelbrot Creator
 <img src="data/Mandelbrot_Creator.png"/>
 
-In this project we are going to draw Mandelbrot fractal using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame. 
+This project consists of developing code to draw and explore a certain kind of fractal called a Mandelbrot set.
+
+## Mandelbrot Set
+Benoit Mandelbrot was a Polish born, French/American mathematician who spent most of his career at the IBM research center in New York. He is credited for coining the term “fractal” and developed a theory of “roughness”/“self- similarity”/“fractals”/“chaos”.
+
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<!-- In this project we are going to draw Mandelbrot fractal using the object oriented features of C++ and its ability to perform concurrently. OpenCV is used to implement this project and showing the result in form of an image which is able to zoom-in and zoom-out in all places the pointer points to in the frame.  -->
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -31,7 +37,10 @@ or simply:
 * `make build` to build the project.
 * `make clean` to remove the build directory.
 * `make style` to specify the format you want your code be like.
-  * You will need to install `clang-format` first in case it is not installed. You only need to use in once.
+  * You will need to install `clang-format` first in case it is not installed. You only need to use it once.
+  * In macOS you to have `Homebrew` installed. The instructions on how to install, can be found [here](https://brew.sh). Then you can `brew install clang-format`.
+  * In Ubuntu or Debian you can `sudo apt install clang-format`.
+
 * `make format` to use the settings of the `style` which in this project is set by default to `-style=google`.
 * `make all` to perform almost all the steps above at once.
 
